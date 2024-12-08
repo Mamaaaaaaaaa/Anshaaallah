@@ -1,0 +1,75 @@
+/* تحسين الشكل مع الرموز */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom, #ffe6f0, #ffcccc);
+    color: #900c3f;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #d6336c;
+    font-size: 3rem;
+    animation: pulse 3s infinite;
+}
+
+button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #900c3f;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: slideDown 1s ease-out;
+    color: #d6336c;
+}
+
+.hidden {
+    display: none;
+}
+
+/* رسوم متحركة إضافية */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

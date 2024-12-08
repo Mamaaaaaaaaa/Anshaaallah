@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار: هل تعرف توتا؟ 💕✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>اختبار: هل تعرف توتا؟ ❤️🌟</h1>
+    <form id="quizForm">
+        <div class="user-info">
+            <label>👤 الاسم: <input type="text" name="name" required></label>
+            <label>📅 العمر: <input type="number" name="age" required></label>
+            <label>💌 الدلع: <input type="text" name="nickname" required></label>
+        </div>
+
+        <div class="questions-container" id="questionsContainer"></div>
+
+        <button type="button" onclick="submitQuiz()">🎯 أرسل</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+    <button id="emailButton" class="hidden" onclick="sendEmail()">✉️ أرسل النتيجة إلى البريد</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
